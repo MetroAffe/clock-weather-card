@@ -3,7 +3,7 @@ import { css } from 'lit'
 export default css`
 
   ha-card {
-    --bar-height: 1.5rem;
+    --bar-height: 2rem;
     height: 100%;
   }
 
@@ -44,7 +44,8 @@ export default css`
   clock-weather-card-today-right-wrap-center {
     display: flex;
     height: 4rem;
-    font-size: 3.5rem;
+    font-size: 6rem;
+    margin-top: 1rem;
     white-space: nowrap;
     align-items: center;
     justify-content: center;
@@ -90,8 +91,7 @@ export default css`
     left: 0%;
     right: 100%;
     width: 100%;
-    opacity: 0.25;
-    background: var(--light-primary-color);
+    background: rgba(10, 10, 10, 0.45);
   }
 
   forecast-temperature-bar-current-indicator-dot {
