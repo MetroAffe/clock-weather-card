@@ -45,18 +45,18 @@ console.info(
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
   type: 'clock-weather-card',
-  name: 'Clock Weather Card',
+  name: 'Clock Weather Card Custom',
   description: 'Shows the current date/time in combination with the current weather and an iOS insipired weather forecast.'
 })
 
 const gradientMap: Map<number, Rgb> = new Map()
-  .set(-20, new Rgb(0, 60, 98)) // dark blue
-  .set(-10, new Rgb(120, 162, 204)) // darker blue
-  .set(0, new Rgb(164, 195, 210)) // light blue
-  .set(10, new Rgb(121, 210, 179)) // turquoise
-  .set(20, new Rgb(252, 245, 112)) // yellow
-  .set(30, new Rgb(255, 150, 79)) // orange
-  .set(40, new Rgb(255, 192, 159)) // red
+  .set(-20, new Rgb(41, 47, 86)) // dark blue
+  .set(-10, new Rgb(9, 80, 127)) // darker blue
+  .set(0, new Rgb(0, 116, 152)) // light blue
+  .set(10, new Rgb(0, 151, 163)) // turquoise
+  .set(20, new Rgb(0, 188, 161)) // yellow ab hier nur noch grünlich
+  .set(30, new Rgb(67, 223, 139)) // orange
+  .set(40, new Rgb(172, 250, 112)) // red
 
 @customElement('clock-weather-card')
 export class ClockWeatherCard extends LitElement {
